@@ -16,6 +16,7 @@
     	${builtins.readFile ./nvim/plugin/flutter-tools.lua}
     	${builtins.readFile ./nvim/plugin/treesitter.lua}
     	${builtins.readFile ./nvim/plugin/nvim-tree.lua}
+    	${builtins.readFile ./nvim/plugin/nvim-ts-autotag}
     '';
     extraPackages = with pkgs; [
       mesonlsp
@@ -34,7 +35,8 @@
       nodePackages.prettier
     ];
     plugins = with pkgs.vimPlugins; [
-	  nvim-tree-lua
+      nvim-tree-lua
+      nvim-ts-autotag
       rose-pine
       neoformat
       plenary-nvim
