@@ -16,7 +16,7 @@
     	${builtins.readFile ./nvim/plugin/flutter-tools.lua}
     	${builtins.readFile ./nvim/plugin/treesitter.lua}
     	${builtins.readFile ./nvim/plugin/nvim-tree.lua}
-    	${builtins.readFile ./nvim/plugin/nvim-ts-autotag}
+    	${builtins.readFile ./nvim/plugin/nvim-ts-autotag.lua}
     '';
     extraPackages = with pkgs; [
       mesonlsp
